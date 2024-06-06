@@ -1,5 +1,15 @@
+import HeroBanner from './HeroBanner';
+import Services from './Services';
+import ProjectProcess from './ProjectProcess';
+
 function Home(props) {
-    return <h1>Home Page</h1>;
+    return (
+        <>
+            <HeroBanner />
+            <Services />
+            <ProjectProcess />
+        </>
+    );
 }
 
 export default Home;

@@ -4,7 +4,6 @@ import routes from './routes';
 import './App.css';
 
 function App() {
-    console.log(routes)    
     return (
         <Router>
             <div className="App">
