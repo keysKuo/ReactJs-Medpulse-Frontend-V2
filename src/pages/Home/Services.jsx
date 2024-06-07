@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { IoIosArrowForward } from 'react-icons/io';
+import Button from '../../components/Button';
 
 import { serviceImage } from '../../assets/home';
 
@@ -51,12 +50,8 @@ function Services(props) {
             <hr className="h-px my-[36px] bg-dark-violet border-0 xl:w-[1180px] w-full" />
             <div className="xl:w-[1180px] w-full flex justify-between items-center gap-[5px]">
                 <p className="text-[20px] font-medium">Hãy để đội ngũ chuyên gia MedPulse tư vấn cho bạn</p>
-                <Link className="flex items-center justify-center w-fit px-[28px] py-[12px] rounded-[50px] text-button-text bg-button gap-[20px]">
-                    <p className="text-[20px] font-medium whitespace-nowrap sm:block hidden">Đăng ký tư vấn</p>
-                    <p className="text-[20px] font-medium whitespace-nowrap sm:hidden block">Đăng ký</p>
-                    <IoIosArrowForward className="text-[20px]" />
-                </Link>
-            </div>
+                <Button />
+            </div>  
         </section>
     );
 }

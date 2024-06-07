@@ -9,7 +9,7 @@ function Header(props) {
     const [showMenuItem, setShowMenuItem] = useState(-1);
 
     return (
-        <header className="w-full flex flex-col justify-center items-center bg-white sticky top-0 z-[999]">
+        <header className="w-full flex flex-col justify-center items-center bg-black sticky top-0 z-[999]">
             <div className="xl:w-[1180px] w-full xl:py-[15px] py-[8px] px-[16px] flex justify-between items-center">
                 <Link to={'/'}>
                     <img src={icons.logo} alt="logoHeader" />
