@@ -1,10 +1,8 @@
 import AboutUs from '../pages/AbouUs';
-import Contact from '../pages/Contact';
 import Home from '../pages/Home';
-import News from '../pages/News';
-import Policy from '../pages/Policy';
-import PostDetail from '../pages/PostDetail';
 import Layout from '../components/Layout';
+import Services from '../pages/Service';
+import Combos from '../pages/Combo';
 
 const normalRoutes = [
     {
@@ -13,28 +11,38 @@ const normalRoutes = [
         layout: Layout,
     },
     {
+        path: '/dich-vu',
+        component: Services,
+        layout: Layout,
+    },
+    {
         path: '/ve-medpulse-marketing',
         component: AboutUs,
         layout: Layout,
     },
     {
-        path: '/lien-he',
-        component: Contact,
+        path: '/combo-fanpage',
+        component: Combos,
         layout: Layout,
     },
     {
-        path: '/tin-tuc',
-        component: News,
+        path: '/combo-website',
+        component: Combos,
         layout: Layout,
     },
     {
-        path: '/chinh-sach',
-        component: Policy,
+        path: '/combo-quay-dung',
+        component: Combos,
         layout: Layout,
     },
     {
-        path: '/post',
-        component: PostDetail,
+        path: '/combo-tiktok',
+        component: Combos,
+        layout: Layout,
+    },
+    {
+        path: '/blogs',
+        component: Combos,
         layout: Layout,
     },
 ];

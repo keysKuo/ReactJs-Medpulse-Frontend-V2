@@ -2,7 +2,7 @@ import { lineImage, processImage } from '../../assets/home';
 
 function ProjectProcess(props) {
     return (
-        <section className="w-full flex flex-col justify-center items-center xl:my-[60px] my-[30px]">
+        <section className="w-full flex flex-col justify-center items-center py-[30px]">
             <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col justify-between relative items-center gap-[86px] sm:gap-[30px] xl:px-0 px-4">
                 <div className="flex flex-col gap-[16px] items-center justify-center">
                     <h1 className="sm:text-[36px] text-[24px] font-bold">Quy trình triển khai dự án</h1>
@@ -17,7 +17,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process1} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process1}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Nhu cầu</div>
                         </div>
@@ -30,7 +34,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process2} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process2}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Kế hoạch</div>
                         </div>
@@ -43,7 +51,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process3} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process3}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Chi tiết</div>
                         </div>
@@ -56,7 +68,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process4} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process4}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Ký kết</div>
                         </div>
@@ -68,7 +84,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process5} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process5}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Triển khai</div>
                         </div>
@@ -81,7 +101,11 @@ function ProjectProcess(props) {
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">
                         <div className="flex gap-[8px] items-center justify-start">
                             <div className="p-[5.88px]">
-                                <img src={processImage.process6} alt="processIcon" className="sm:w-[38.2px] w-[31.2px]" />
+                                <img
+                                    src={processImage.process6}
+                                    alt="processIcon"
+                                    className="sm:w-[38.2px] w-[31.2px]"
+                                />
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Nghiệm thu</div>
                         </div>

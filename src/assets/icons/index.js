@@ -4,6 +4,8 @@ import youtube from './yt.png';
 import zalo from './zalo.png';
 import logo from './Logo.png';
 import logoFooter from './Logo-footer.png';
+import star from './star.png';
+import podium from './podium.png';
 
 const icons = {
     facebook,
@@ -12,6 +14,8 @@ const icons = {
     zalo,
     logo,
     logoFooter,
+    star,
+    podium,
 };
 
 export default icons;

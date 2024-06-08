@@ -1,14 +1,14 @@
 import HeroBanner from './HeroBanner';
 import Services from './Services';
 import ProjectProcess from './ProjectProcess';
-import AboutUs from './AboutUs';
-import Register from './Register';
+import AboutUs from '../../components/Sections/AboutUs';
+import Register from '../../components/Sections/Register';
 import Statistic from './Statistic';
-import CaseStudy from './CaseStudy';
-import Achievement from './Achievement';
-import Partner from './Partner';
+import CaseStudy from '../../components/Sections/CaseStudy';
+import Achievement from '../../components/Sections/Achievement';
+import Partner from '../../components/Sections/Partner';
 import Feedback from './Feedback';
-import Blog from './Blog';
+import Blog from '../../components/Sections/Blog';
 
 function Home(props) {
     return (

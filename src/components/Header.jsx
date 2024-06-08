@@ -1,12 +1,18 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { IoMdArrowDropdown, IoMdMenu } from 'react-icons/io';
 import { FiSearch } from 'react-icons/fi';
 import icons from '../assets/icons';
 
 function Header(props) {
+    const navigate = useNavigate();
     const [showMenu, setShowMenu] = useState(false);
     const [showMenuItem, setShowMenuItem] = useState(-1);
+
+    const handleNaviagate = (url) => {
+        setShowMenu(false);
+        navigate(url);
+    };
 
     return (
         <header className="w-full flex flex-col justify-center items-center bg-white sticky top-0 z-[999]">
@@ -23,34 +29,62 @@ function Header(props) {
                         <p>Dịch vụ</p>
                         <IoMdArrowDropdown className="group-hover:rotate-180 transition ease-in-out" />
                         <div className="absolute top-10 left-5 w-[315px] bg-white shadow-lg p-2 rounded-xl hidden group-hover:block">
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                            <Link
+                                to={'/dich-vu'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
                                 Marketing tổng thể
-                            </div>
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                            </Link>
+                            <Link
+                                to={'/dich-vu'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
                                 Dịch vụ / giải pháp thương hiệu
-                            </div>
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                            </Link>
+                            <Link
+                                to={'/dich-vu'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
                                 Dịch vụ / giải pháp tiếp thị bán hàng
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center">
                         <p>Gói Combo</p>
                         <IoMdArrowDropdown className="group-hover:rotate-180 transition ease-in-out" />
                         <div className="absolute top-10 left-5 w-[315px] bg-white shadow-lg p-2 rounded-xl hidden group-hover:block">
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                            <Link
+                                to={'/combo-fanpage'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
                                 Gói Fanpage{' '}
-                            </div>
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">Gói Website</div>
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                            </Link>
+                            <Link
+                                to={'/combo-website'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
+                                Gói Website
+                            </Link>
+                            <Link
+                                to={'/combo-quay-dung'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
                                 Gói Quay dựng
-                            </div>
-                            <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">Gói Tiktok</div>
+                            </Link>
+                            {/* <Link
+                                to={'/combo-tiktok'}
+                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                            >
+                                Gói Tiktok
+                            </Link> */}
                         </div>
                     </div>
-                    <div className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center">
+                    <Link
+                        to={'/blogs'}
+                        className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center"
+                    >
                         <p>Blog</p>
-                        <IoMdArrowDropdown className="group-hover:rotate-180 transition ease-in-out" />
+                        {/* <IoMdArrowDropdown className="group-hover:rotate-180 transition ease-in-out" />
                         <div className="absolute top-10 left-5 w-[315px] bg-white shadow-lg p-2 rounded-xl hidden group-hover:block">
                             <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">Case study</div>
                             <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
@@ -60,8 +94,8 @@ function Header(props) {
                             <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
                                 Sự kiện - ưu đãi
                             </div>
-                        </div>
-                    </div>
+                        </div> */}
+                    </Link>
                     <div
                         to={'/ve-medpulse-marketing'}
                         className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center"
@@ -102,13 +136,22 @@ function Header(props) {
                         onClick={(e) => e.stopPropagation()}
                         className={`p-2 rounded-xl ${showMenuItem === 1 ? 'block' : 'hidden'}`}
                     >
-                        <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                        <div
+                            onClick={() => handleNaviagate('/dich-vu')}
+                            className="p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                        >
                             Marketing tổng thể
                         </div>
-                        <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                        <div
+                            onClick={() => handleNaviagate('/dich-vu')}
+                            className="p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                        >
                             Dịch vụ / giải pháp thương hiệu
                         </div>
-                        <div className="p-[6px] font-[400] hover:bg-violet hover:text-button-text">
+                        <div
+                            onClick={() => handleNaviagate('/dich-vu')}
+                            className="p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                        >
                             Dịch vụ / giải pháp tiếp thị bán hàng
                         </div>
                     </div>
