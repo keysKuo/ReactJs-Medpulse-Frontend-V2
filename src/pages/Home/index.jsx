@@ -7,6 +7,8 @@ import Statistic from './Statistic';
 import CaseStudy from './CaseStudy';
 import Achievement from './Achievement';
 import Partner from './Partner';
+import Feedback from './Feedback';
+import Blog from './Blog';
 
 function Home(props) {
     return (
@@ -20,6 +22,8 @@ function Home(props) {
             <CaseStudy />
             <Achievement />
             <Partner />
+            <Feedback />
+            <Blog />
         </>
     );
 }

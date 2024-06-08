@@ -6,6 +6,7 @@ import aboutSectionImage from './aboutSectionImg.png';
 import registerSectionImage from './registerSectionImg.png';
 import caseStudyImages from './caseStudySection';
 import partnerImages from './PartnerSection';
+import feedbackImages from './feedbackSection';
 
 export {
     heroBannerImage,
@@ -15,5 +16,6 @@ export {
     aboutSectionImage,
     registerSectionImage,
     caseStudyImages,
-    partnerImages
+    partnerImages,
+    feedbackImages,
 };

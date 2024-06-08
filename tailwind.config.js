@@ -5,9 +5,10 @@ export default {
         extend: {
             colors: {
                 'yellow-card': '#ffbf39',
-                'light-gray': '#F4F4F4',
+                'light-gray': '#DFDFDF',
+                gray: '#757575',
                 yellow: '#FFB54A',
-                'yellow-500': '#ffc000',
+                'dark-yellow': '#FF9900',
                 violet: '#8D47F8',
                 'light-violet': '#F7F0FF',
                 'dark-violet': '#3F1979',
