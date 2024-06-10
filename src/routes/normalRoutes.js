@@ -1,8 +1,10 @@
-import AboutUs from '../pages/AbouUs';
+import AboutUsPage from '../pages/AbouUs';
 import Home from '../pages/Home';
 import Layout from '../components/Layout';
 import Services from '../pages/Service';
 import Combos from '../pages/Combo';
+import Blogs from '../pages/Blogs';
+import BlogDetail from '../pages/BlogDetail';
 
 const normalRoutes = [
     {
@@ -17,7 +19,7 @@ const normalRoutes = [
     },
     {
         path: '/ve-medpulse-marketing',
-        component: AboutUs,
+        component: AboutUsPage,
         layout: Layout,
     },
     {
@@ -42,7 +44,12 @@ const normalRoutes = [
     },
     {
         path: '/blogs',
-        component: Combos,
+        component: Blogs,
+        layout: Layout,
+    },
+    {
+        path: '/blogs/:blogDetail',
+        component: BlogDetail,
         layout: Layout,
     },
 ];

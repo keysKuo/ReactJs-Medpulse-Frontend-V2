@@ -5,7 +5,7 @@ import icons from '../assets/icons';
 
 function Footer(props) {
     return (
-        <footer className="w-full flex flex-col items-center justify-center">
+        <footer className="w-full flex flex-col items-center justify-center select-none">
             <div className="xl:w-[1120px] w-full xl:pt-[27px] pt-[28px] xl:pb-[27px] pb-[33px] xl:px-0 px-[16px] flex lg:flex-row flex-col justify-between items-start lg:gap-0 gap-[24px] text-[16px] font-[400]">
                 <div className="flex flex-col gap-[20px]">
                     <div className="w-[100px]">

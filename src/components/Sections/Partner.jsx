@@ -53,7 +53,7 @@ function Partner(props) {
                         <div
                             key={idx}
                             className={`text-center inline-block h-2 w-2 cursor-pointer m-1 rounded-full ${
-                                currentIndex === idx ? 'bg-emerald transform scale-150' : 'bg-gray-200'
+                                currentIndex === idx ? 'bg-emerald transform scale-150' : 'bg-light-gray'
                             }`}
                         ></div>
                     ))}

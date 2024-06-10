@@ -1,5 +1,5 @@
-import aboutUsBanner from './aboutUsBanner.jpg';
 import blogBanner from './blogBanner.jpg';
+import aboutUsBanner from './aboutUsBanner.jpg';
 import comboFBBanner from './comboFBBanner.jpg';
 import comboFilmBanner from './comboFilmBanner.jpg';
 import comboWebsiteBanner from './comboWebsiteBanner.jpg';
