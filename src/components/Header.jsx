@@ -32,11 +32,17 @@ function Header(props) {
                     <div className={`hidden lg:flex justify-center items-center gap-2 text-[16px] font-medium `}>
                         <Link
                             to={'/dich-vu'}
-                            className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center"
+                            className={`${
+                                location.pathname.includes('dich-vu') ? 'text-button' : 'text-black'
+                            } px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center`}
                         >
                             <p>Dịch vụ</p>
                         </Link>
-                        <div className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center">
+                        <div
+                            className={`${
+                                location.pathname.includes('combo') ? 'text-button' : 'text-black'
+                            } px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center`}
+                        >
                             <p>Gói Combo</p>
                             <IoMdArrowDropdown className="group-hover:rotate-180 transition ease-in-out" />
                             <div className="absolute top-10 left-5 w-[315px] bg-white shadow-lg p-2 rounded-xl hidden group-hover:block">
@@ -62,13 +68,17 @@ function Header(props) {
                         </div>
                         <Link
                             to={'/blogs'}
-                            className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center"
+                            className={`${
+                                location.pathname.includes('blogs') ? 'text-button' : 'text-black'
+                            } px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center`}
                         >
                             <p>Blog</p>
                         </Link>
                         <Link
                             to={'/ve-medpulse-marketing'}
-                            className="px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center"
+                            className={`${
+                                location.pathname.includes('ve-medpulse-marketing') ? 'text-button' : 'text-black'
+                            } px-[15px] py-[10px] group cursor-pointer relative flex gap-2 justify-center items-center`}
                         >
                             <p>Về Medpulse Marketing</p>
                         </Link>

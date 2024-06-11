@@ -4,15 +4,15 @@ import { IoIosArrowForward } from 'react-icons/io';
 import Overlay from '../../components/Overlay';
 import RegisterForm from '../../components/RegisterForm';
 
-import Button from '../../components/Button';
 import { aboutSectionImage } from '../../assets/home';
+import transparentImages from '../../assets/transparentImages';
 
 function AboutUs(props) {
     const [showModal, setShowModal] = useState(false);
 
     return (
         <>
-            <section className="w-full flex flex-col mt-[30px] justify-center items-center">
+            <section className="w-full relative flex flex-col mt-[30px] justify-center items-center">
                 <div className="xl:w-[1180px] w-full flex lg:flex-row flex-col xl:px-0 px-4">
                     <div className="flex flex-col md:gap-[24px] gap-[20px]">
                         <div className="flex flex-col md:gap-[16px] gap-[12px]">
@@ -53,11 +53,22 @@ function AboutUs(props) {
                             cầu, vừa đưa ra giải pháp linh hoạt, phù hợp, đảm bảo tính hiệu quả - y đức - đặc thù của
                             ngành Y tế. Mang giá trị dịch vụ tốt nhất của doanh nghiệp đến đúng với khách hàng mục tiêu.
                         </p>
-                        <div className="lg:w-full w-[241px] max-h-[377px] md:px-0 px-[31.5px] md:pt-0 pt-[21px] self-center bg-button flex justify-center bg-opacity-20 md:rounded-[30px] rounded-[11.754px]">
-                            <img src={aboutSectionImage} alt="aboutUsImage" className="h-full" />
+                        <div className="md:w-full w-[241px] md:px-0 px-[30px] md:pt-0 pt-[21px] self-center bg-button flex justify-center bg-opacity-20 md:rounded-[30px] rounded-[11.754px]">
+                            <img
+                                src={aboutSectionImage}
+                                alt="aboutUsImage"
+                                className="md:min-w-[439px] md:min-h-[436px] min-w-[210px] min-h-[210px]"
+                            />
                         </div>
                     </div>
                 </div>
+                <img
+                    src={transparentImages.aboutSectionsLogo}
+                    alt="bgImage"
+                    className="absolute bottom-0 left-0 translate-y-1/2 opacity-40 mix-blend-screen z-[-1] sm:block hidden"
+                    height={721}
+                    width={340}
+                />
             </section>
             {showModal && (
                 <Overlay className={'flex flex-col justify-center items-center'} onClick={() => setShowModal(false)}>

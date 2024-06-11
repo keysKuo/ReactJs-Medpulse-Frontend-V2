@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import icons from '../../assets/icons';
 import { aboutSectionImage } from '../../assets/home';
+import { comboIntroImage } from '../../assets';
 
 import titlesIntroductionSection from '../../constants/titlesIntroductionSection';
 
@@ -19,7 +20,7 @@ function Introduction(props) {
             <div className="xl:w-[1180px] w-full flex lg:gap-[50px] gap-[24px] lg:flex-row flex-col-reverse items-center justify-center xl:px-0 px-4">
                 <div className="flex-1 rounded-[30px] bg-light-violet flex justify-center">
                     <img
-                        src={aboutSectionImage}
+                        src={location.pathname.includes('combo') ? comboIntroImage : aboutSectionImage}
                         alt="registerSectionImage"
                         className="sm:w-[525px] w-[343px] lg:h-[408px] h-[343px]"
                     />

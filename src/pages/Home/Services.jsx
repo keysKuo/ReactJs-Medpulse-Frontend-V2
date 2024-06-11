@@ -56,14 +56,14 @@ function Services(props) {
                 </div>
                 <hr className="h-px my-[36px] bg-dark-violet border-0 xl:w-[1180px] w-full" />
                 <div className="xl:w-[1180px] w-full flex justify-between items-center gap-[5px]">
-                    <p className="text-[20px] font-medium">Hãy để đội ngũ chuyên gia MedPulse tư vấn cho bạn</p>
+                    <p className="text-[14px] sm:text-[20px] font-medium">Hãy để đội ngũ chuyên gia MedPulse tư vấn cho bạn</p>
                     <div
                         onClick={() => setShowModal(true)}
                         className="flex cursor-pointer items-center justify-center w-fit px-[28px] py-[12px] rounded-[50px] text-button-text bg-button gap-[20px]"
                     >
-                        <p className="text-[20px] font-medium whitespace-nowrap sm:block hidden">Đăng ký tư vấn</p>
-                        <p className="text-[20px] font-medium whitespace-nowrap sm:hidden block">Đăng ký</p>
-                        <IoIosArrowForward className="text-[20px]" />
+                        <p className="sm:text-[20px] text-[16px] font-medium whitespace-nowrap sm:block hidden">Đăng ký tư vấn</p>
+                        <p className="sm:text-[20px] text-[16px] font-medium whitespace-nowrap sm:hidden block">Đăng ký</p>
+                        <IoIosArrowForward className="sm:text-[20px] text-[16px]" />
                     </div>
                 </div>
             </section>

@@ -59,11 +59,11 @@ function BlogDetail(props) {
                             <div class="absolute bottom-0 right-0 min-h-[158px] w-full bg-gradient-to-b from-[#ffffff00] from-[0%] to-[#FFF] to-[100%]"></div>
                         </div>
                         <div className="w-full cursor-pointer flex justify-center items-center flex-col">
-                            <p className='text-[16px] font-normal'>Xem tiếp</p>
+                            <p className="text-[16px] font-normal">Xem tiếp</p>
                             <IoIosArrowDown className="text-[16px]" />
                             <IoIosArrowDown className="text-[16px] opacity-60" />
                         </div>
-                        <div className="w-full flex gap-[24px] items-center justify-center p-[20px] rounded-[16px] bg-[#F1F6F1]">
+                        <div className="w-full flex sm:flex-row flex-col gap-[24px] items-center justify-center p-[20px] rounded-[16px] bg-[#F1F6F1]">
                             <img
                                 src={doctorComment}
                                 alt="doctor"
@@ -71,7 +71,7 @@ function BlogDetail(props) {
                                 height={100}
                                 className="w-[100px] h-[100px]"
                             />
-                            <div className="flex flex-col gap-[12px]">
+                            <div className="flex flex-col gap-[12px] sm:text-start text-center">
                                 <h1 className="text-[20px] font-medium text-dark-violet">Tôn Thất Bách</h1>
                                 <p className="text-[16px] font-normal">
                                     Tôi cam kết chia sẻ kiến thức và kinh nghiệm hơn 5 năm kinh nghiệm trong lĩnh vực
@@ -110,7 +110,10 @@ function BlogDetail(props) {
                         </div>
                     </div>
                 </div>
-                <Blog isBlogDetailPage={true}/>
+                <Blog isBlogDetailPage={true} />
+                <div className="p-[24px_20px] bg-[#F1F6F1] rounded-[20px] xl:hidden block">
+                    <RegisterForm isSidebar={true} />
+                </div>
             </div>
         </div>
     );

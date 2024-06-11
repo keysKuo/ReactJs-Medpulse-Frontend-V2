@@ -13,7 +13,7 @@ const Breadcrumb = () => {
     const pathnames = location.pathname.split('/').filter((x) => x);
 
     return (
-        <div className="xl:w-[1180px] w-full overflow-x-scroll hideScrollbar sm:py-[30px] py-[20px] px-[16px] pl-0 bg-white text-[16px] font-normal">
+        <div className="xl:w-[1180px] w-full overflow-x-scroll hideScrollbar sm:py-[30px] py-[20px] px-[16px] sm:pl-0 bg-white text-[16px] font-normal">
             <div className="sm:w-full w-max flex gap-[8px]">
                 <Link to="/" className="flex items-center gap-[8px] text-gray">
                     <p>Trang chủ</p>

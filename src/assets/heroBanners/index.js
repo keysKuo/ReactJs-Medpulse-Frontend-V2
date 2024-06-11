@@ -1,9 +1,12 @@
-import blogBanner from './blogBanner.jpg';
-import aboutUsBanner from './aboutUsBanner.jpg';
-import comboFBBanner from './comboFBBanner.jpg';
-import comboFilmBanner from './comboFilmBanner.jpg';
-import comboWebsiteBanner from './comboWebsiteBanner.jpg';
-import serviceBanner from './serviceBanner.jpg';
+import blogBanner from './blogBanner.png';
+import aboutUsBanner from './aboutUsBanner.png';
+import comboFBBanner from './comboFBBanner.png';
+import comboFilmBanner from './comboFilmBanner.png';
+import comboWebsiteBanner from './comboWebsiteBanner.png';
+import serviceBanner from './serviceBanner.png';
+
+// download layer image
+// config partners sections
 
 const bannerImages = { aboutUsBanner, blogBanner, comboFBBanner, comboFilmBanner, comboWebsiteBanner, serviceBanner };
 

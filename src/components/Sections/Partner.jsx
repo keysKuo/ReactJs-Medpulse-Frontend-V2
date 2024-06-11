@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { partnerImages } from '../../assets/home';
 
 function Partner(props) {
-    const totalItems = 6;
+    const totalItems = partnerImages.length;
     const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
 
@@ -31,18 +31,22 @@ function Partner(props) {
     }, [currentIndex]);
 
     return (
-        <section className="w-full pt-[40px] pb-[52px] flex flex-col justify-center items-center gap-[32px] xl:px-0 px-[16px]">
+        <section className="w-full pt-[40px] pb-[52px] flex flex-col justify-center items-center gap-[32px] xl:px-0 px-[16px] pr-0">
             <h1 className="sm:text-[36px] text-[24px] font-bold text-center">Đối tác MedPulse</h1>
-            <div className="xl:w-[1050px] w-[85%] relative flex flex-col items-center gap-[20px]">
+            <div className="xl:w-[1050px] sm:w-[85%] w-full relative flex flex-col items-center gap-[20px]">
                 <div className="w-full overflow-hidden">
                     <div
-                        className="w-screen grid grid-rows-2 grid-flow-col gap-y-[16px] lg:gap-x-0 gap-x-[12px] transition-transform duration-300 ease-in-out"
+                        className="w-screen grid sm:grid-rows-[repeat(2,100px)] grid-rows-[repeat(2,56.3px)] sm:grid-cols-[repeat(4,200px)] grid-cols-[repeat(4,113px)] grid-flow-col sm:gap-y-[16px] gap-y-[4px] sm:gap-x-[90px] gap-x-[12px] transition-transform duration-300 ease-in-out"
                         style={{ transform: `translateX(-${currentIndex * 15}%)` }}
                     >
                         {partnerImages.map((image, index) => {
                             return (
-                                <div key={index} className="w-fit flex items-center justify-center">
-                                    <img src={image} alt="imagePartber" className="md:max-w-[200px] max-w-[85px]" />
+                                <div key={index} className="flex items-center justify-center">
+                                    <img
+                                        src={image}
+                                        alt="imagePartber"
+                                        className="max-w-full sm:max-h-full max-h-[45px]"
+                                    />
                                 </div>
                             );
                         })}
