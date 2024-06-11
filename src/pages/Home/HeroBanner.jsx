@@ -9,32 +9,13 @@ import transparentImages from '../../assets/transparentImages';
 
 function HeroBanner(props) {
     const [showModal, setShowModal] = useState(false);
-
     return (
         <>
-            <section className="w-full xl:px-0 px-[16px] flex flex-col relative justify-center items-center bg-gradient-to-r from-[#e8d6ff99] from-[3.6%] to-[#ffffff99] to-[59.82%]">
+            <section
+                // prettier-ignore
+                className={`w-full xl:px-0 px-[16px] flex flex-col relative justify-center items-center bg-transparent bg-cover bg-no-repeat sm:bg-[url('${transparentImages.HeroHomeBg.substring(1)}')] bg-[url('${transparentImages.HeroHomeMobileBg.substring(1)}')]`}
+            >
                 <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col xl:gap-[42px] gap-[20px] py-[51px] xl:px-0 px-[16px]">
-                    <img
-                        src={transparentImages.logoBlendHeroBanner}
-                        alt="bgImage"
-                        className="absolute top-7 left-0 opacity-40 mix-blend-screen z-[-1] sm:block hidden"
-                        height={180}
-                        width={381}
-                    />
-                    <img
-                        src={transparentImages.logoBlendHeroBanner}
-                        alt="bgImage"
-                        className="absolute bottom-10 right-0 opacity-70 mix-blend-screen z-[-1] sm:block hidden"
-                        width={320}
-                        height={151}
-                    />
-                    <img
-                        src={transparentImages.largeLogoHeroBanner}
-                        alt="bgImage"
-                        className="absolute z-[-1] top-[377px] left-[54px] opacity-10 mix-blend-screen sm:w-[604px] sm:h-[137px] w-[157px] h-[36px] sm:block hidden"
-                        width={604}
-                        height={137}
-                    />
                     <div className="flex-grow xl:seft-start flex flex-col gap-[20px] xl:items-start items-center xl:mt-[59px] xl:px-0 px-[12px]">
                         <div className="xl:text-start text-center">
                             <h1 className="lg:text-[36px] text-[25px] font-bold text-dark-violet">

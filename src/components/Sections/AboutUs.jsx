@@ -65,9 +65,9 @@ function AboutUs(props) {
                 <img
                     src={transparentImages.aboutSectionsLogo}
                     alt="bgImage"
-                    className="absolute bottom-0 left-0 translate-y-1/2 opacity-40 mix-blend-screen z-[-1] sm:block hidden"
-                    height={721}
-                    width={340}
+                    className="absolute bottom-0 left-0 translate-y-[30%] -translate-x-[20%] mix-blend-screen z-[-1] sm:block hidden"
+                    height={340}
+                    width={721}
                 />
             </section>
             {showModal && (
