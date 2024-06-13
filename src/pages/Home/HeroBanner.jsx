@@ -5,14 +5,13 @@ import Overlay from '../../components/Overlay';
 import RegisterForm from '../../components/RegisterForm';
 
 import { heroBannerImage } from '../../assets/home';
-import transparentImages from '../../assets/transparentImages';
 
 function HeroBanner(props) {
     const [showModal, setShowModal] = useState(false);
     return (
         <>
             <section
-                className={`w-full xl:px-0 px-[16px] flex flex-col relative justify-center items-center bg-transparent bg-cover bg-no-repeat sm:bg-[url('src/assets/transparentImages/HeroHomeBg.jpg')] bg-[url('src/assets/transparentImages/HeroHomeMobileBg.jpg')]`}
+                className={`w-full xl:px-0 px-[16px] flex flex-col relative justify-center items-center bg-transparent bg-cover bg-no-repeat sm:bg-[url(/transparentImages/HeroHomeBg.jpg)] bg-[url(/transparentImages/HeroHomeMobileBg.jpg)]`}
             >
                 <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col xl:gap-[42px] gap-[20px] py-[51px] xl:px-0 px-[16px]">
                     <div className="flex-grow xl:seft-start flex flex-col gap-[20px] xl:items-start items-center xl:mt-[59px] xl:px-0 px-[12px]">
