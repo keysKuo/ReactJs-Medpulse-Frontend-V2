@@ -26,16 +26,17 @@ function Combos(props) {
             <HeroBanner />
             <Introduction />
             <Benefits />
-            <section className="w-full flex flex-col my-[30px] justify-center items-center bg-violet text-button-text">
-                <div className="xl:w-[1180px] w-full flex justify-between items-center gap-[5px] py-[31px] xl:px-0 px-[16px]">
-                    <p className="text-[20px] font-medium">Hãy để đội ngũ chuyên gia MedPulse tư vấn cho bạn</p>
+            <section className="w-full flex flex-col my-[31px] justify-center items-center bg-violet text-button-text">
+                <div className="xl:w-[1180px] w-full flex justify-between items-center sm:gap-[5px] gap-[10px] py-[31px] xl:px-0 px-[16px]">
+                    <p className="sm:text-[25px] text-[14px] font-medium leading-[1.2]">
+                        Hãy để đội ngũ chuyên gia MedPulse tư vấn cho bạn
+                    </p>
                     <div
                         onClick={() => setShowModal(true)}
-                        className="flex cursor-pointer items-center justify-center w-fit px-[28px] py-[12px] rounded-[50px] border-2 border-white text-button-text bg-violet gap-[10px]"
+                        className="flex cursor-pointer items-center justify-center w-fit sm:px-[30px] px-[16px] sm:py-[16px] py-[12px] rounded-[50px] border-2 border-white text-button-text bg-violet gap-[10px]"
                     >
-                        <p className="text-[20px] font-medium whitespace-nowrap sm:block hidden">Đăng ký tư vấn</p>
-                        <p className="text-[20px] font-medium whitespace-nowrap sm:hidden block">Đăng ký</p>
-                        <FaArrowRightLong className="text-[20px]" />
+                        <p className="text-[16px] font-medium whitespace-nowrap">Đăng ký tư vấn</p>
+                        <FaArrowRightLong className="text-[20px] sm:block hidden" />
                     </div>
                 </div>
             </section>

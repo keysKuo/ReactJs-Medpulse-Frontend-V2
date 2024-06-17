@@ -5,16 +5,17 @@ import icons from '../../assets/icons';
 import { aboutSectionImage } from '../../assets/home';
 import { comboIntroImage } from '../../assets';
 
-import titlesIntroductionSection from '../../constants/titlesIntroductionSection';
+import constantsIntroductionSection from '../../constants/constantsIntroductionSection';
 
 function Introduction(props) {
     const location = useLocation();
-    const [introductionTitle, setIntroductionTitle] = useState('');
+    const [constantsIntroduction, setConstantsIntroduction] = useState('');
 
     useEffect(() => {
-        setIntroductionTitle(titlesIntroductionSection[location.pathname.split('/').pop()]);
+        setConstantsIntroduction(constantsIntroductionSection[location.pathname.split('/').pop()]);
     }, [location.pathname]);
 
+    console.log();
     return (
         <section className="w-full flex flex-col mt-[30px] justify-center items-center">
             <div className="xl:w-[1180px] w-full flex lg:gap-[50px] gap-[24px] lg:flex-row flex-col-reverse items-center justify-center xl:px-0 px-4">
@@ -22,20 +23,26 @@ function Introduction(props) {
                     <img
                         src={location.pathname.includes('combo') ? comboIntroImage : aboutSectionImage}
                         alt="registerSectionImage"
-                        className="sm:w-[525px] w-[343px] lg:h-[408px] h-[343px]"
+                        className={
+                            location.pathname.includes('combo')
+                                ? 'sm:w-[525px] w-[343px] lg:h-[408px] h-[343px]'
+                                : 'sm:w-[439px] w-[343px] lg:h-[439px] h-[343px]'
+                        }
                     />
                 </div>
                 <div className="flex-1 flex-grow self-center flex flex-col sm:gap-[30px] gap-[16px]">
-                    <div className="flex flex-col gap-[12px]">
+                    <div className="flex flex-col sm:gap-[12px] gap-0">
                         <div className="flex sm:gap-[12px] gap-[8px] sm:items-center items-start">
                             <img src={icons.star} alt="icon" className="sm:w-[40px] w-[24px] sm:mt-0 mt-1" />
-                            <h1 className="font-bold sm:text-[30px] text-[20px]">{introductionTitle}</h1>
+                            <h1 className="sm:font-bold font-medium sm:text-[30px] text-[20px]">
+                                {constantsIntroduction.title}
+                            </h1>
                         </div>
-                        <p className="text-[16px] font-normal sm:ml-0 ml-[32px]">
-                            Giải pháp Marketing tổng thể là sự kết hợp toàn diện của các giải pháp Marketing dành cho
-                            doanh nghiệp và phòng khám y tế, từ phân tích thị trường, nhu cầu khách hàng, tư vấn lựa
-                            chọn sản phẩm dịch vụ, chương trình khuyến mãi đến triển khai nhận diện thương hiệu kết hợp
-                            thương mại thông qua đa kênh kết hợp (omnichannel)
+                        <p className="text-[16px] font-normal leading-normal sm:block hidden">
+                            {constantsIntroduction?.desc?.desktop}
+                        </p>
+                        <p className="text-[16px] font-normal ml-[32px] leading-normal sm:hidden block">
+                            {constantsIntroduction?.desc?.mobile}
                         </p>
                     </div>
                     <div className="flex flex-col gap-[12px]">
@@ -43,7 +50,7 @@ function Introduction(props) {
                             <img src={icons.podium} alt="icon" className="sm:w-[40px] w-[24px] sm:mt-0 mt-1" />
                             <h1 className="font-bold sm:text-[30px] text-[20px]">Giải pháp này phù hợp với bạn nếu?</h1>
                         </div>
-                        <ul className="text-[16px] font-normal list-disc sm:ml-[20px] ml-[55px]">
+                        <ul className="text-[16px] font-normal list-disc sm:ml-[20px] ml-[55px] leading-normal">
                             <li>
                                 Thương hiệu bạn đang cần đội ngũ Marketing outsource am hiểu như in-house triển khai
                                 chiến lược hiệu quả

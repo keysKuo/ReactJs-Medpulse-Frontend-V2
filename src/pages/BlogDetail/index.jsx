@@ -12,7 +12,22 @@ function BlogDetail(props) {
             <div className="xl:w-[1180px] w-full flex flex-col xl:px-0 px-4">
                 <div className="w-full grid xl:grid-cols-[800px_1fr] grid-cols-1 gap-[30px]">
                     <div className="min-w-full flex flex-col justify-center items-center gap-[20px]">
-                        <div className="max-h-[1876px] relative">
+                        <div className="flex flex-col sm:gap-[16px] gap-[12px] leading-normal">
+                            <h1 className="sm:text-[31px] text-[24px] font-medium">
+                                Phòng khám Nam Khoa - BS Lê Vũ Tân
+                            </h1>
+                            <h2 className="text-[16px] font-normal">
+                                <span className="font-medium">Ngày cập nhật:</span> 23/03/2024
+                            </h2>
+                            <div className="pl-[16px] border-l-2 border-button">
+                                <p>
+                                    Hiện nay, người dân đang tìm kiếm các phòng khám chất lượng cao và chi phí hợp lý vì
+                                    họ không muốn phải chờ đợi và chen chúc quá nhiều tại các bệnh viện lớn. Vậy Medpro
+                                    xin được giới thiệu 5 phòng uy tín nhất hiện nay
+                                </p>
+                            </div>
+                        </div>
+                        <div className="max-h-[1876px] relative leading-normal">
                             <p>
                                 4 tiêu chí để tìm ra các phòng khám chất lượng cao tại Việt Nam Với số lượng các phòng
                                 khám ngày càng mọc như nấm ở Việt Nam thì tỷ lệ gặp phải 1 phòng khám "chui, kém chất
@@ -73,7 +88,7 @@ function BlogDetail(props) {
                             />
                             <div className="flex flex-col gap-[12px] sm:text-start text-center">
                                 <h1 className="text-[20px] font-medium text-dark-violet">Tôn Thất Bách</h1>
-                                <p className="text-[16px] font-normal">
+                                <p className="text-[16px] font-normal leading-normal">
                                     Tôi cam kết chia sẻ kiến thức và kinh nghiệm hơn 5 năm kinh nghiệm trong lĩnh vực
                                     marketing y tế đa ngành đa lĩnh vực đa chuyên khoa. Mong rằng các bác sĩ, Quản lý
                                     Bệnh viện và marketer y tế có thể tìm thấy những giá trị áp dụng trong công việc của
@@ -111,7 +126,7 @@ function BlogDetail(props) {
                     </div>
                 </div>
                 <Blog isBlogDetailPage={true} />
-                <div className="p-[24px_20px] bg-[#F1F6F1] rounded-[20px] xl:hidden block">
+                <div className="sm:p-[24px_20px] p-[20px_16px] bg-[#F1F6F1] rounded-[20px] xl:hidden block">
                     <RegisterForm isSidebar={true} />
                 </div>
             </div>

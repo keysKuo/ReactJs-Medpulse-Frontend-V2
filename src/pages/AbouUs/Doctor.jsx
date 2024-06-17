@@ -2,8 +2,8 @@ import abouUsPageImages from '../../assets/about-us';
 
 function Doctor(props) {
     return (
-        <section className="w-full flex flex-col md:gap-[24px] gap-[20px] justify-center items-center mt-[44px] sm:py-[50px] py-[24px] bg-light-violet ">
-            <h1 className="sm:text-[36px] text-[24px] font-bold">Cố vấn chuyên môn</h1>
+        <section className="w-full leading-normal flex flex-col md:gap-[24px] gap-[20px] justify-center items-center mt-[44px] sm:py-[50px] py-[24px] bg-light-violet ">
+            <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium">Cố vấn chuyên môn</h1>
             <div className="xl:w-[1002px] w-full flex xl:px-0 px-4">
                 <div className="md:bg-white bg-light-violet md:p-[30px_40px] p-0 flex md:flex-row flex-col md:gap-[65px] gap-[12px] items-center rounded-[16px]">
                     <div className="flex flex-col gap-[16x] items-center">

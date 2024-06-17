@@ -10,10 +10,10 @@ function NewsCard(props) {
             <div className="w-full sm:h-[160px] h-[115px]">
                 <img src={thumbnail} alt="blog" className="rounded-t-[12px] w-full h-full" />
             </div>
-            <div className=" w-full flex flex-col items-start gap-[8px] p-[16px]">
-                <p className="font-normal text-gray">{date}</p>
-                <div>
-                    <p className="line-clamp-2 font-medium text-[18px]">{title}</p>
+            <div className=" w-full flex flex-col items-start sm:gap-[8px] gap-0 leading-normal p-[16px]">
+                <p className="font-normal text-gray sm:text-[13px] text-[12px]">{date}</p>
+                <div className='flex flex-col sm:gap-0 gap-[8px]'>
+                    <p className="line-clamp-2 font-medium sm:text-[18px] text-[16px]">{title}</p>
                     <p className="line-clamp-3 font-normal text-[16px]">{desc}</p>
                 </div>
             </div>

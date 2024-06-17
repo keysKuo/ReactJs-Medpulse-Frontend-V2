@@ -16,13 +16,13 @@ function AboutUs(props) {
                 <div className="xl:w-[1180px] w-full flex lg:flex-row flex-col xl:px-0 px-4">
                     <div className="flex flex-col md:gap-[24px] gap-[20px]">
                         <div className="flex flex-col md:gap-[16px] gap-[12px]">
-                            <h1 className="md:text-[36px] text-[24px] font-bold">Định hướng MedPusle</h1>
+                            <h1 className="md:text-[36px] text-[24px] sm:font-bold font-medium">Định hướng MedPusle</h1>
                             <div className="flex flex-col md:gap-[12px] gap-[8px]">
-                                <p className="md:text-[20px] text-[16px] font-normal ">Giới thiệu về Founder</p>
-                                <h2 className="md:text-[31px] text-[18px] font-medium">
+                                <p className="md:text-[20px] text-[16px] font-normal leading-normal">Giới thiệu về Founder</p>
+                                <h2 className="md:text-[31px] text-[18px] font-medium leading-normal">
                                     Agency mang giải pháp marketing đặc thù riêng biệt cho lĩnh vực y tế
                                 </h2>
-                                <p className="text-[16px] font-normal">
+                                <p className="text-[16px] font-normal leading-normal">
                                     Với xuất thân Founder là Dược sĩ ĐHYD TPHCM, MBA UEH, cùng hơn 05 năm kinh nghiệm
                                     triển khai marketing - sale cho bệnh viện, phòng khám, xét nghiệm và dược, chúng tôi
                                     thấu hiểu và “bắt mạch” được tính đặc thù trong lĩnh vực này.
@@ -37,8 +37,7 @@ function AboutUs(props) {
                             onClick={() => setShowModal(true)}
                             className="flex cursor-pointer items-center justify-center w-fit px-[28px] py-[12px] rounded-[50px] text-button-text bg-button gap-[20px]"
                         >
-                            <p className="text-[20px] font-medium whitespace-nowrap sm:block hidden">Đăng ký tư vấn</p>
-                            <p className="text-[20px] font-medium whitespace-nowrap sm:hidden block">Đăng ký</p>
+                            <p className="sm:text-[20px] text-[16px] font-medium whitespace-nowrap">Đăng ký tư vấn</p>
                             <IoIosArrowForward className="text-[20px]" />
                         </div>{' '}
                     </div>
@@ -57,7 +56,7 @@ function AboutUs(props) {
                             <img
                                 src={aboutSectionImage}
                                 alt="aboutUsImage"
-                                className="md:min-w-[439px] md:min-h-[436px] min-w-[210px] min-h-[210px]"
+                                className="md:w-[439px] md:h-[439px] min-w-[210px] min-h-[210px]"
                             />
                         </div>
                     </div>

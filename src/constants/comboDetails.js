@@ -1,11 +1,18 @@
 const combosDetails = {
     'combo-fanpage': {
-        title: 'Gói Combo Facebook Fanpage',
-        desc: 'Gói Combo Facebook Fanpage được xây dựng dựa trên kinh nghiệm triển khai tương ứng 01 nhân sự đáp ứng đa dạng nhu cầu. Giá gói chưa bao gồm ngân sách quảng cáo và các khoản thuế theo quy định pháp luật hiện hành.',
+        title: {
+            desktop: 'Gói Combo Facebook Fanpage',
+            mobile: 'Gói Combo Facebook Fanpage',
+        },
+        desc: {
+            desktop:
+                'Gói Combo Facebook Fanpage được xây dựng dựa trên kinh nghiệm triển khai tương ứng 01 nhân sự đáp ứng đa dạng nhu cầu. Giá gói chưa bao gồm ngân sách quảng cáo và các khoản thuế theo quy định pháp luật hiện hành.',
+            mobile: 'Gói Combo Facebook Fanpage được xây dựng dựa trên kinh nghiệm triển khai tương ứng 01 nhân sự đáp ứng đa dạng nhu cầu.',
+        },
         details: [
             {
                 name: 'Start-up',
-                price: '6 triệu / tháng',
+                price: '6 triệu/tháng',
                 desc: 'Đăng ký triển khai từ 03 tháng trở lên',
                 functions: [
                     'Xây dựng Facebook Fanpage',
@@ -17,7 +24,7 @@ const combosDetails = {
             },
             {
                 name: 'SME',
-                price: '10 triệu / tháng',
+                price: '10 triệu/tháng',
                 desc: 'Đăng ký triển khai từ 03 tháng trở lên',
                 functions: [
                     'Xây dựng Facebook Fanpage',
@@ -48,8 +55,15 @@ const combosDetails = {
         ],
     },
     'combo-website': {
-        title: 'Gói Combo Xây Dựng Website',
-        desc: 'Gói combo Website được xây dựng dựa trên kinh nghiệm và nhu cầu khách hàng. Gói dịch vụ chưa bao gồm chi phí bảo trì hệ thống hàng năm sau khi hết thời gian bảo hành (duy trì tên miền, hosting, bảo trì hệ thống) ',
+        title: {
+            desktop: 'Gói Combo Xây Dựng Website',
+            mobile: 'Gói Combo Website',
+        },
+        desc: {
+            desktop:
+                'Gói combo Website được xây dựng dựa trên kinh nghiệm và nhu cầu khách hàng. Gói dịch vụ chưa bao gồm chi phí bảo trì hệ thống hàng năm sau khi hết thời gian bảo hành (duy trì tên miền, hosting, bảo trì hệ thống)',
+            mobile: 'Gói combo Website được xây dựng dựa trên kinh nghiệm và nhu cầu khách hàng. Gói chưa bao gồm bảo trì, gia hạn, bảo hành.',
+        },
         details: [
             {
                 name: 'Start-up',
@@ -96,12 +110,19 @@ const combosDetails = {
         ],
     },
     'combo-quay-dung': {
-        title: 'Gói Combo Quay dựng',
-        desc: 'Gói Quay dựng video được thiết kế đáp ứng nhu cầu với chi phí bằng 01 nhân viên, có ngay  01 đội ngũ, thiết bị, kịch bản và dựng video hoàn chỉnh. Gói dịch vụ chưa bao gồm các chi phí phát sinh và các khoản thuế theo quy định pháp luật hiện hành',
+        title: {
+            desktop: 'Gói Combo Quay dựng',
+            mobile: 'Gói Combo Quay dựng',
+        },
+        desc: {
+            desktop:
+                'Gói Quay dựng video được thiết kế đáp ứng nhu cầu với chi phí bằng 01 nhân viên, có ngay  01 đội ngũ, thiết bị, kịch bản và dựng video hoàn chỉnh. Gói dịch vụ chưa bao gồm các chi phí phát sinh và các khoản thuế theo quy định pháp luật hiện hành',
+            mobile: 'Gói Quay dựng video được thiết kế với chi phí bằng 01 nhân viên, đáp ứng  như  01 đội ngũ, thiết bị, kịch bản và dựng video hoàn chỉnh',
+        },
         details: [
             {
                 name: 'Start-up',
-                price: '6 triệu / tháng',
+                price: '6 triệu/tháng',
                 desc: 'Đăng ký triển khai từ 03 tháng trở lên',
                 functions: [
                     '02 buổi ghi hình/tháng',
@@ -114,7 +135,7 @@ const combosDetails = {
             },
             {
                 name: 'SME',
-                price: '10 triệu / tháng',
+                price: '10 triệu/tháng',
                 desc: 'Dự án từ 06 tháng trở lên',
                 functions: [
                     '04 buổi ghi hình/tháng',

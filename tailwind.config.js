@@ -23,6 +23,9 @@ export default {
             backgroundColor: {
                 footer: '#340065',
             },
+            lineHeight: {
+                'normal': 1.2,
+            },
         },
     },
     plugins: [],

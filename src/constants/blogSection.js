@@ -1,5 +1,7 @@
 import newsImages from '../assets/news';
 
+// complete home, service, combo pages
+
 const blogs = [
     {
         title: 'Marketing là gì? 13 hình thức Marketing phổ biến nhất 2023',

@@ -4,8 +4,8 @@ function RegisterForm(props) {
     const { isSidebar = false, isModal = false, onCloseModal } = props;
 
     return (
-        <div className={`w-full relative flex flex-col sm:${isSidebar ? 'gap-[14.5px]' : 'gap-[28px]'} gap-[16px]`}>
-            <h1 className={`sm:${isSidebar ? 'text-[18px]' : 'text-[36px]'} text-[24px] font-bold`}>
+        <div className={`w-full leading-normal relative flex flex-col sm:${isSidebar ? 'gap-[14.5px]' : 'gap-[28px]'} gap-[16px]`}>
+            <h1 className={`${isSidebar ? 'text-[20px] text-center font-medium' : 'sm:text-[36px] text-[24px] sm:font-bold font-medium'}`}>
                 {isSidebar ? 'Đăng ký tư vấn dịch vụ Marketing' : 'Đăng ký tư vấn dịch vụ Marketing với MedPulse'}
             </h1>
             <div
@@ -39,10 +39,11 @@ function RegisterForm(props) {
                         <option disabled hidden>
                             Ngành nghề
                         </option>
-                        <option>Ngành nghề 1</option>
-                        <option>Ngành nghề 2</option>
-                        <option>Ngành nghề 3</option>
-                        <option>Ngành nghề 4</option>
+                        <option>Quản lý Phòng khám</option>
+                        <option>Quản lý bệnh viện</option>
+                        <option>Quản lý Marketing</option>
+                        <option>Chủ doanh nghiệp</option>
+                        <option>Khác</option>
                     </select>
                 </div>
                 <div className={`cursor-pointer ${isSidebar ? 'self-center' : ''}`}>
@@ -51,7 +52,7 @@ function RegisterForm(props) {
                             isSidebar ? 'px-[20px] py-[8px]' : 'px-[28px] py-[12px]'
                         } rounded-[50px] text-button-text bg-button gap-[20px]`}
                     >
-                        <p className={`${isSidebar ? 'text-[16px]' : 'text-[20px]'} font-medium whitespace-nowrap`}>
+                        <p className={`${isSidebar ? 'text-[16px]' : 'sm:text-[20px] text-[16px]'} font-medium whitespace-nowrap`}>
                             {isSidebar || isModal ? 'Đăng ký ngay' : 'Đăng ký tư vấn trực tiếp'}
                         </p>
                         {!isSidebar && <IoIosArrowForward className="text-[20px]" />}

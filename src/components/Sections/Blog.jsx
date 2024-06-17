@@ -12,7 +12,9 @@ function Blog(props) {
                     isBlogDetailPage ? '' : 'sm:text-center'
                 } text-start`}
             >
-                Blog Marketing y tế
+                {
+                    isBlogDetailPage ? 'Bài viết cùng chuyên mục' : 'Blog Marketing y tế'
+                }
             </h1>
             <div className="xl:w-[1180px] w-full xl:overflow-x-visible overflow-x-scroll hideScrollbar">
                 <div className="xl:w-full min-w-max flex items-stretch flex-row sm:gap-[24px] gap-[12px]">

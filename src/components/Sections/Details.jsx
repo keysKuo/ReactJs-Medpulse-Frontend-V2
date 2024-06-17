@@ -13,7 +13,7 @@ function Details(props) {
     return (
         <section className="w-full flex flex-col mt-[30px] justify-center items-center">
             <div className="xl:w-[1180px] w-full flex lg:gap-[32px] gap-[20px] flex-col items-center justify-center xl:px-0 px-4">
-                <h1 className="sm:text-[36px] text-[24px] font-bold text-center">{detailTitle}</h1>
+                <h1 className="sm:text-[36px] text-[23px] sm:font-bold font-medium text-center">{detailTitle}</h1>
                 <div className="flex lg:gap-[50px] gap-[24px] lg:flex-row flex-col items-center justify-center">
                     <div className="flex-1 w-full flex items-center justify-center">
                         <img src={detailSectionImage} alt="detailSectionImage" className="sm:w-full" />
@@ -23,7 +23,7 @@ function Details(props) {
                             <div className="sm:px-[12.5px] px-[9.37px] sm:text-[25px] text-[18.75px] bg-violet text-white rounded-full">
                                 1
                             </div>
-                            <div className="flex flex-col items-start lg:gap-[12px] gap-[6px]">
+                            <div className="flex flex-col items-start lg:gap-[12px] gap-[8px] leading-normal">
                                 <h1 className="sm:text-[25px] text-[20px] font-medium">Thấu hiểu đặc thù ngành</h1>
                                 <p className="text-[16px] font-normal">
                                     Kiến thức - Kinh nghiệm - Trải nghiệm đủ để "bắt mạch" được những trăn trở của khách
@@ -36,7 +36,7 @@ function Details(props) {
                             <div className="sm:px-[12.5px] px-[9.37px] sm:text-[25px] text-[18.75px] bg-violet text-white rounded-full">
                                 2
                             </div>
-                            <div className="flex flex-col items-start lg:gap-[12px] gap-[6px]">
+                            <div className="flex flex-col items-start lg:gap-[12px] gap-[8px] leading-normal">
                                 <h1 className="sm:text-[25px] text-[20px] font-medium">Dịch vụ toàn diện</h1>
                                 <p className="text-[16px] font-normal">
                                     Cam kết dịch vụ marketing y tế đáp ứng toàn diện nhằm giúp khách hàng/bác sĩ tiết
@@ -49,7 +49,7 @@ function Details(props) {
                             <div className="sm:px-[12.5px] px-[9.37px] sm:text-[25px] text-[18.75px] bg-violet text-white rounded-full">
                                 3
                             </div>
-                            <div className="flex flex-col items-start lg:gap-[12px] gap-[6px]">
+                            <div className="flex flex-col items-start lg:gap-[12px] gap-[8px] leading-normal">
                                 <h1 className="sm:text-[25px] text-[20px] font-medium">Rõ ràng & minh bạch</h1>
                                 <p className="text-[16px] font-normal">
                                     Kiến thức - Kinh nghiệm - Trải nghiệm đủ để "bắt mạch" được những trăn trở của khách

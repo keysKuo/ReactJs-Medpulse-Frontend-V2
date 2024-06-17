@@ -3,10 +3,16 @@ import { lineImage, processImage } from '../../assets/home';
 function ProjectProcess(props) {
     return (
         <section className="w-full flex flex-col justify-center items-center py-[30px]">
-            <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col justify-between relative items-center gap-[86px] sm:gap-[30px] xl:px-0 px-4">
+            <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col justify-between relative items-center sm:gap-[86px] gap-[30px] xl:px-0 px-4">
                 <div className="flex flex-col gap-[16px] items-center justify-center">
-                    <h1 className="sm:text-[36px] text-[24px] font-bold">Quy trình triển khai dự án</h1>
-                    <img src={processImage.main} alt="processImage" className="max-w-full" />
+                    <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium whitespace-nowrap">
+                        Quy trình triển khai dự án
+                    </h1>
+                    <img
+                        src={processImage.main}
+                        alt="processImage"
+                        className="sm:w-[390px] sm:h-[332px] min-w-[231px] h-[196px]"
+                    />
                 </div>
                 <img
                     src={lineImage}
@@ -25,7 +31,7 @@ function ProjectProcess(props) {
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Nhu cầu</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Mong muốn</li>
                             <li>Ngân sách</li>
                             <li>KPI dự kiến</li>
@@ -42,7 +48,7 @@ function ProjectProcess(props) {
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Kế hoạch</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Phân tích</li>
                             <li>Đánh giá</li>
                             <li>Đề xuất giải pháp</li>
@@ -59,7 +65,7 @@ function ProjectProcess(props) {
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Chi tiết</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Hoạt động MKT</li>
                             <li>Timeline</li>
                             <li>KPI cam kết</li>
@@ -76,7 +82,7 @@ function ProjectProcess(props) {
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Ký kết</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Hợp đồng</li>
                             <li>Thỏa thuận bảo mật (NDA)</li>
                         </ul>
@@ -92,7 +98,7 @@ function ProjectProcess(props) {
                             </div>
                             <div className="sm:text-[20px] text-[16px] font-bold">Triển khai</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Triển khai</li>
                             <li>Đo lường</li>
                             <li>Tối ưu</li>
@@ -104,12 +110,12 @@ function ProjectProcess(props) {
                                 <img
                                     src={processImage.process6}
                                     alt="processIcon"
-                                    className="sm:w-[38.2px] w-[31.2px]"
+                                    className="sm:min-w-[38.2px] min-w-[31.2px]"
                                 />
                             </div>
-                            <div className="sm:text-[20px] text-[16px] font-bold">Nghiệm thu</div>
+                            <div className="sm:text-[20px] text-[16px] font-bold whitespace-nowrap">Nghiệm thu</div>
                         </div>
-                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px]">
+                        <ul className="sm:text-[16px] text-[14px] font-normal list-disc pl-[30px] leading-normal">
                             <li>Nghiệm thu KPI</li>
                             <li>Đánh giá tổng kết</li>
                             <li>Nhận nhu cầu mới</li>

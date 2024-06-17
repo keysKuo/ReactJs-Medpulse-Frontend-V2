@@ -20,13 +20,21 @@ function HeroBanner(props) {
                     location.pathname.split('/').pop() === 'blogs' ? 'sm:py-[56.5px]' : 'sm:py-[133px]'
                 } py-0 flex flex-col justify-center items-center `}
             >
-                <div className="flex flex-col gap-[16px] text-white text-center max-w-[900px] p-[30px]">
-                    <div className="flex flex-col items-center gap-[12px]">
-                        <h1 className="sm:text-[36px] text-[25px] font-bold">{heroBannerDetail.title}</h1>
-                        <hr className="h-px w-[60px] bg-white border-0 " />
+                <div className="flex flex-col sm:gap-[16px] gap-[12px] text-white text-center max-w-[900px] p-[30px] leading-normal">
+                    <div className="flex flex-col items-center sm:gap-[12px] gap-[8px]">
+                        <h1 className="sm:text-[36px] text-[25px] font-bold sm:block hidden">
+                            {heroBannerDetail?.title?.desktop}
+                        </h1>
+                        <h1 className="sm:text-[36px] text-[25px] font-bold sm:hidden block">
+                            {heroBannerDetail?.title?.mobile}
+                        </h1>
+                        <hr className="sm:h-[2px] h-px w-[60px] bg-white border-0 " />
                     </div>
-                    <p className="sm:text-[16px] text-[14px] sm:line-clamp-none line-clamp-2">
-                        {heroBannerDetail.desc}
+                    <p className="sm:text-[16px] text-[14px] leading-normal sm:line-clamp-none line-clamp-2 sm:block hidden">
+                        {heroBannerDetail?.desc?.desktop}
+                    </p>
+                    <p className="sm:text-[16px] text-[14px] leading-normal sm:line-clamp-none line-clamp-2 sm:hidden block">
+                        {heroBannerDetail?.desc?.mobile}
                     </p>
                 </div>
                 <div

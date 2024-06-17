@@ -92,60 +92,67 @@ function Header(props) {
                 </div>
                 {location.pathname.includes('/blogs/') && <Breadcrumb />}
                 <div
-                    className={`flex-col self-start w-full lg:hidden gap-2 text-[16px] absolute top-14 bg-white font-medium ${
-                        showMenu ? 'flex' : 'hidden'
+                    className={`w-full h-screen lg:hidden text-[16px] absolute top-14 bg-black bg-opacity-50 font-medium ${
+                        showMenu ? 'block' : 'hidden'
                     }`}
                 >
-                    <div className="px-[15px] py-[10px] cursor-pointer" onClick={() => handleNaviagate('/dich-vu')}>
-                        <div className="flex items-center justify-between">
-                            <p>Dịch vụ</p>
-                        </div>
-                    </div>
-                    <div
-                        className="px-[15px] py-[10px] group cursor-pointer"
-                        onClick={() => (showMenuItem === 2 ? setShowMenuItem(-1) : setShowMenuItem(2))}
-                    >
-                        <div className="flex items-center justify-between">
-                            <p>Gói Combo</p>
-                            <IoMdArrowDropdown
-                                className={`${showMenuItem === 2 ? 'rotate-180' : 'rotate-0'} transition ease-in-out`}
-                            />
+                    <div className={`flex-col self-start w-full gap-2 text-[16px] bg-white font-medium `}>
+                        <div className="px-[15px] py-[10px] cursor-pointer" onClick={() => handleNaviagate('/dich-vu')}>
+                            <div className="flex items-center justify-between">
+                                <p>Dịch vụ</p>
+                            </div>
                         </div>
                         <div
-                            onClick={(e) => e.stopPropagation()}
-                            className={`p-2 rounded-xl ${showMenuItem === 2 ? 'block' : 'hidden'}`}
+                            className="px-[15px] py-[10px] group cursor-pointer"
+                            onClick={() => (showMenuItem === 2 ? setShowMenuItem(-1) : setShowMenuItem(2))}
                         >
-                            <div
-                                onClick={() => handleNaviagate('/combo-fanpage')}
-                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
-                            >
-                                Gói Fanpage{' '}
+                            <div className="flex items-center justify-between">
+                                <p>Gói Combo</p>
+                                <IoMdArrowDropdown
+                                    className={`${
+                                        showMenuItem === 2 ? 'rotate-180' : 'rotate-0'
+                                    } transition ease-in-out`}
+                                />
                             </div>
                             <div
-                                onClick={() => handleNaviagate('/combo-website')}
-                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                                onClick={(e) => e.stopPropagation()}
+                                className={`p-2 rounded-xl ${showMenuItem === 2 ? 'block' : 'hidden'}`}
                             >
-                                Gói Website
-                            </div>
-                            <div
-                                onClick={() => handleNaviagate('/combo-quay-dung')}
-                                className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
-                            >
-                                Gói Quay dựng
+                                <div
+                                    onClick={() => handleNaviagate('/combo-fanpage')}
+                                    className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                                >
+                                    Gói Fanpage{' '}
+                                </div>
+                                <div
+                                    onClick={() => handleNaviagate('/combo-website')}
+                                    className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                                >
+                                    Gói Website
+                                </div>
+                                <div
+                                    onClick={() => handleNaviagate('/combo-quay-dung')}
+                                    className="block p-[6px] font-[400] hover:bg-violet hover:text-button-text"
+                                >
+                                    Gói Quay dựng
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="px-[15px] py-[10px] group cursor-pointer" onClick={() => handleNaviagate('/blogs')}>
-                        <div className="flex items-center justify-between">
-                            <p>Blog</p>
+                        <div
+                            className="px-[15px] py-[10px] group cursor-pointer"
+                            onClick={() => handleNaviagate('/blogs')}
+                        >
+                            <div className="flex items-center justify-between">
+                                <p>Blog</p>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        className="px-[15px] py-[10px] group cursor-pointer"
-                        onClick={() => handleNaviagate('/ve-medpulse-marketing')}
-                    >
-                        <div className="flex items-center justify-between">
-                            <p>Về Medpulse Marketing</p>
+                        <div
+                            className="px-[15px] py-[10px] group cursor-pointer"
+                            onClick={() => handleNaviagate('/ve-medpulse-marketing')}
+                        >
+                            <div className="flex items-center justify-between">
+                                <p>Về Medpulse Marketing</p>
+                            </div>
                         </div>
                     </div>
                 </div>

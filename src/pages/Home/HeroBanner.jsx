@@ -5,21 +5,27 @@ import Overlay from '../../components/Overlay';
 import RegisterForm from '../../components/RegisterForm';
 
 import { heroBannerImage } from '../../assets/home';
+import transparentImages from '../../assets/transparentImages';
 
 function HeroBanner(props) {
     const [showModal, setShowModal] = useState(false);
     return (
         <>
             <section
-                className={`w-full xl:px-0 px-[16px] flex flex-col relative justify-center items-center bg-transparent bg-cover bg-no-repeat sm:bg-[url(/transparentImages/HeroHomeBg.jpg)] bg-[url(/transparentImages/HeroHomeMobileBg.jpg)]`}
+                className={`w-full xl:px-0 px-[16px] overflow-hidden flex flex-col relative justify-center items-center bg-transparent bg-cover bg-no-repeat sm:bg-[url(/transparentImages/HeroHomeBg.jpg)] bg-[url(/transparentImages/HeroHomeMobileBg.jpg)]`}
             >
-                <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col xl:gap-[42px] gap-[20px] py-[51px] xl:px-0 px-[16px]">
-                    <div className="flex-grow xl:seft-start flex flex-col gap-[20px] xl:items-start items-center xl:mt-[59px] xl:px-0 px-[12px]">
-                        <div className="xl:text-start text-center">
-                            <h1 className="lg:text-[36px] text-[25px] font-bold text-dark-violet">
+                <img
+                    src={transparentImages.logoBlendHeroBanner}
+                    alt="transparentImage"
+                    className="absolute sm:w-[320px] w-[193px] sm:h-[151px] h-[91px] bottom-[48px] sm:right-0 -right-[28px] sm:translate-x-0 translate-x-10 bg-blend-screen opacity-40"
+                />
+                <div className="xl:w-[1180px] w-full flex xl:flex-row flex-col xl:gap-[42px] gap-[20px] py-[51px]">
+                    <div className="flex-grow w-full xl:seft-start flex flex-col gap-[20px] xl:items-start items-center xl:mt-[59px]">
+                        <div className="xl:text-start text-center w-full">
+                            <h1 className="lg:text-[36px] text-[25px] font-bold text-dark-violet leading-normal sm:px-0 px-2">
                                 Dịch Vụ Marketing Y Tế Trọn Gói
                             </h1>
-                            <p className="lg:text-[20px] text-[16px] font-normal">
+                            <p className="lg:text-[20px] text-[16px] font-normal leading-normal">
                                 Giải pháp tinh gọn, hiệu quả, tiết kiệm chi phí và tăng tỷ lệ chuyển đổi trong lĩnh vực
                                 y tế
                             </p>
@@ -28,7 +34,7 @@ function HeroBanner(props) {
                             onClick={() => setShowModal(true)}
                             className="flex cursor-pointer items-center justify-center w-fit px-[28px] py-[12px] rounded-[50px] text-button-text bg-button gap-[20px]"
                         >
-                            <p className="text-[20px] font-medium whitespace-nowrap">Đăng ký tư vấn</p>
+                            <p className="sm:text-[20px] text-[16px] font-medium whitespace-nowrap">Đăng ký tư vấn</p>
                             <IoIosArrowForward className="text-[20px]" />
                         </div>
                     </div>

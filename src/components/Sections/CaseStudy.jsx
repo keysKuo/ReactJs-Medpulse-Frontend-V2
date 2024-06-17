@@ -9,7 +9,7 @@ function CaseStudy(props) {
     return (
         <section className="w-full flex flex-col sm:py-[56px] py-[25px] justify-center items-center">
             <div className="xl:w-[1180px] w-full xl:px-0 px-4">
-                <h1 className="sm:text-[36px] text-[24px] font-bold xl:mb-[36px] mb-[24px] text-center">Case Study</h1>
+                <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium xl:mb-[36px] mb-[24px] text-center">Case Study</h1>
                 <div className="xl:w-[1180px] w-full flex flex-row xl:justify-between justify-center items-start">
                     <div className="w-[423px] xl:block hidden">
                         <img
@@ -19,11 +19,11 @@ function CaseStudy(props) {
                     </div>
                     <div className="xl:w-[650px] sm:w-[90%] w-full flex flex-col gap-[12px]">
                         <div
-                            className="flex gap-[12px] cursor-pointer"
+                            className="flex gap-[12px] items-center cursor-pointer"
                             onClick={() => (showDropDown === 1 ? setShowDropDown(-1) : setShowDropDown(1))}
                         >
                             <div
-                                className={`rounded-full h-fit ${
+                                className={`rounded-full self-start h-fit ${
                                     showDropDown === 1 ? 'border border-violet' : ''
                                 } p-[4px] my-[8px]`}
                             >
@@ -35,7 +35,7 @@ function CaseStudy(props) {
                                     1
                                 </p>
                             </div>
-                            <div className="flex flex-col w-full">
+                            <div className="flex flex-col w-full leading-normal">
                                 <div className="flex justify-between items-center py-[8px] font-medium">
                                     <p
                                         className={`${
@@ -68,11 +68,11 @@ function CaseStudy(props) {
                             </div>
                         </div>
                         <div
-                            className="flex gap-[12px] cursor-pointer"
+                            className="flex gap-[12px] items-center cursor-pointer"
                             onClick={() => (showDropDown === 2 ? setShowDropDown(-1) : setShowDropDown(2))}
                         >
                             <div
-                                className={`rounded-full h-fit ${
+                                className={`rounded-full self-start h-fit ${
                                     showDropDown === 2 ? 'border border-violet' : ''
                                 } p-[4px] my-[8px]`}
                             >
@@ -84,7 +84,7 @@ function CaseStudy(props) {
                                     2
                                 </p>
                             </div>
-                            <div className="flex flex-col w-full">
+                            <div className="flex flex-col w-full leading-normal">
                                 <div className="flex justify-between items-center py-[8px] font-medium">
                                     <p
                                         className={`${
@@ -117,11 +117,11 @@ function CaseStudy(props) {
                             </div>
                         </div>
                         <div
-                            className="flex gap-[12px] cursor-pointer"
+                            className="flex gap-[12px] items-center cursor-pointer"
                             onClick={() => (showDropDown === 3 ? setShowDropDown(-1) : setShowDropDown(3))}
                         >
                             <div
-                                className={`rounded-full h-fit ${
+                                className={`rounded-full self-start h-fit ${
                                     showDropDown === 3 ? 'border border-violet' : ''
                                 } p-[4px] my-[8px]`}
                             >
@@ -133,7 +133,7 @@ function CaseStudy(props) {
                                     3
                                 </p>
                             </div>
-                            <div className="flex flex-col w-full">
+                            <div className="flex flex-col w-full leading-normal">
                                 <div className="flex justify-between items-center py-[8px] font-medium">
                                     <p
                                         className={`${
@@ -170,11 +170,11 @@ function CaseStudy(props) {
                             </div>
                         </div>
                         <div
-                            className="flex gap-[12px] cursor-pointer"
+                            className="flex gap-[12px] items-center cursor-pointer"
                             onClick={() => (showDropDown === 4 ? setShowDropDown(-1) : setShowDropDown(4))}
                         >
                             <div
-                                className={`rounded-full h-fit ${
+                                className={`rounded-full self-start h-fit ${
                                     showDropDown === 4 ? 'border border-violet' : ''
                                 } p-[4px] my-[8px]`}
                             >
@@ -186,7 +186,7 @@ function CaseStudy(props) {
                                     4
                                 </p>
                             </div>
-                            <div className="flex flex-col w-full">
+                            <div className="flex flex-col w-full leading-normal">
                                 <div className="flex justify-between items-center py-[8px] font-medium">
                                     <p
                                         className={`${

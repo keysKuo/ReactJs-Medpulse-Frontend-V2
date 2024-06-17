@@ -13,6 +13,21 @@ import partner12 from './partner-12.png';
 import partner13 from './partner-13.png';
 import partner14 from './partner-14.png';
 
-const partnerImages = [partner4, partner5, partner9, partner10, partner11, partner12, partner13, partner14];
+const partnerImages = [
+    partner4,
+    partner5,
+    partner9,
+    partner10,
+    partner11,
+    partner12,
+    partner13,
+    partner14,
+    partner1,
+    partner2,
+    partner3,
+    partner6,
+    partner7,
+    partner8,
+];
 
 export default partnerImages;
