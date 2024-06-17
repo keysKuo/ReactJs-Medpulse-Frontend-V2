@@ -45,21 +45,26 @@ function Introduction(props) {
                             {constantsIntroduction?.desc?.mobile}
                         </p>
                     </div>
-                    <div className="flex flex-col gap-[12px]">
+                    <div className="flex flex-col sm:gap-[12px] gap-[4px]">
                         <div className="flex sm:gap-[12px] gap-[8px] sm:items-center items-start">
                             <img src={icons.podium} alt="icon" className="sm:w-[40px] w-[24px] sm:mt-0 mt-1" />
-                            <h1 className="font-bold sm:text-[30px] text-[20px]">Giải pháp này phù hợp với bạn nếu?</h1>
+                            <h1 className="sm:font-bold font-medium sm:text-[30px] text-[20px]">
+                                Giải pháp này phù hợp với bạn <span className="sm:inline-block hidden">nếu</span>?
+                            </h1>
                         </div>
                         <ul className="text-[16px] font-normal list-disc sm:ml-[20px] ml-[55px] leading-normal">
                             <li>
-                                Thương hiệu bạn đang cần đội ngũ Marketing outsource am hiểu như in-house triển khai
-                                chiến lược hiệu quả
+                                Thương hiệu bạn đang cần đội ngũ Marketing outsource am hiểu{' '}
+                                <span className="sm:inline-block hidden">
+                                    như in-house triển khai chiến lược hiệu quả
+                                </span>
                             </li>
                             <li>
-                                Thương hiệu bạn bắt đầu kinh doanh, cần truyền thông đến khách hàng mục tiêu hiệu quả
+                                Thương hiệu bạn mới kinh doanh, cần truyền thông đến khách hàng mục tiêu
+                                <span className="sm:inline-block hidden">hiệu quả</span>
                             </li>
                             <li>
-                                Thương hiệu bạn ấn tượng và chuyên nghiệp cần chăm sóc và đẩy mạnh vị thế dẫn đầu về
+                                Thương hiệu bạn <span className="sm:inline-block hidden">ấn tượng và</span> chuyên nghiệp cần chăm sóc và đẩy mạnh vị thế dẫn đầu về
                                 truyền thông - quảng cáo - sự kiện
                             </li>
                             <li>Thương hiệu bạn cần tái định vị thương hiệu sau thời gian duy trì</li>

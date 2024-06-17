@@ -18,15 +18,25 @@ function AboutUs(props) {
                         <div className="flex flex-col md:gap-[16px] gap-[12px]">
                             <h1 className="md:text-[36px] text-[24px] sm:font-bold font-medium">Định hướng MedPusle</h1>
                             <div className="flex flex-col md:gap-[12px] gap-[8px]">
-                                <p className="md:text-[20px] text-[16px] font-normal leading-normal">Giới thiệu về Founder</p>
+                                <p className="md:text-[20px] text-[16px] font-normal leading-normal">
+                                    Giới thiệu về Founder
+                                </p>
                                 <h2 className="md:text-[31px] text-[18px] font-medium leading-normal">
                                     Agency mang giải pháp marketing đặc thù riêng biệt cho lĩnh vực y tế
                                 </h2>
-                                <p className="text-[16px] font-normal leading-normal">
+                                <p className="text-[16px] font-normal leading-normal sm:block hidden">
                                     Với xuất thân Founder là Dược sĩ ĐHYD TPHCM, MBA UEH, cùng hơn 05 năm kinh nghiệm
                                     triển khai marketing - sale cho bệnh viện, phòng khám, xét nghiệm và dược, chúng tôi
                                     thấu hiểu và “bắt mạch” được tính đặc thù trong lĩnh vực này.
                                     <span className="lg:hidden inline-block">
+                                        Tôn chỉ của chúng tôi: “Trong lĩnh vực y tế - sức khỏe, quan trọng nhất là sự
+                                        thấu cảm, y đức và chuẩn chuyên môn, sau đó hãy nghĩ về marketing như thế nào”.
+                                    </span>
+                                </p>
+                                <p className="text-[16px] font-normal leading-normal sm:hidden block">
+                                    Với xuất thân Founder là Dược sĩ ĐHYD TPHCM, MBA UEH, cùng hơn 05 năm kinh nghiệm
+                                    triển khai marketing - sale ngành y tế.
+                                    <span className='block'>
                                         Tôn chỉ của chúng tôi: “Trong lĩnh vực y tế - sức khỏe, quan trọng nhất là sự
                                         thấu cảm, y đức và chuẩn chuyên môn, sau đó hãy nghĩ về marketing như thế nào”.
                                     </span>
@@ -52,7 +62,7 @@ function AboutUs(props) {
                             cầu, vừa đưa ra giải pháp linh hoạt, phù hợp, đảm bảo tính hiệu quả - y đức - đặc thù của
                             ngành Y tế. Mang giá trị dịch vụ tốt nhất của doanh nghiệp đến đúng với khách hàng mục tiêu.
                         </p>
-                        <div className="md:w-full w-[241px] md:px-0 px-[30px] md:pt-0 pt-[21px] self-center bg-button flex justify-center bg-opacity-20 md:rounded-[30px] rounded-[11.754px]">
+                        <div className="md:w-full w-[265px] md:px-0 px-[30px] md:pt-0 pt-[21px] self-center bg-button flex justify-center bg-opacity-20 md:rounded-[30px] rounded-[11.754px]">
                             <img
                                 src={aboutSectionImage}
                                 alt="aboutUsImage"

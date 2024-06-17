@@ -1,4 +1,5 @@
 import { FaStar } from 'react-icons/fa6';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import { feedbackImages } from '../../assets/home';
 
@@ -8,7 +9,7 @@ function Feedback(props) {
             <h1 className="sm:text-[36px] text-[24px] whitespace-nowrap sm:font-bold font-medium text-center">
                 Khách hàng nói gì về MedPulse
             </h1>
-            <div className="xl:w-[1180px] w-full flex items-center lg:flex-row flex-col sm:gap-[24px] gap-[12px]">
+            <div className="xl:w-[1180px] w-full relative flex items-center lg:flex-row flex-col sm:gap-[24px] gap-[12px]">
                 <div className="flex-1 flex sm:flex-col flex-col-reverse gap-[12px] sm:p-[20px] p-[12px] sm:items-center items-start justify-center bg-white sm:rounded-[24px] rounded-[12px] leading-normal">
                     <div className="flex flex-col sm:items-center items-start justify-center sm:gap-[16px] gap-[8px]">
                         <p className="text-[16px] font-normal sm:text-center text-start">
@@ -89,6 +90,12 @@ function Feedback(props) {
                             </p>
                         </div>
                     </div>
+                </div>
+                <div className="absolute cursor-pointer top-1/2 -translate-y-1/2 left-0 -translate-x-[70px] xl:block hidden rounded-full bg-white shadow-md p-[8px]">
+                    <IoIosArrowBack />
+                </div>
+                <div className="absolute cursor-pointer top-1/2 -translate-y-1/2 right-0 translate-x-[70px] xl:block hidden rounded-full bg-white shadow-md p-[8px]">
+                    <IoIosArrowForward />
                 </div>
             </div>
         </section>

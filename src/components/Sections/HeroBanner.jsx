@@ -13,7 +13,9 @@ function HeroBanner(props) {
         setHeroBannerDetail(heroBannerSections[location.pathname.split('/').pop()]);
     }, [location.pathname]);
     return (
-        <section className="w-full max-h-[550px] flex flex-col relative justify-center items-center">
+        <section className={`w-full ${
+            location.pathname.split('/').pop() === 'blogs' ? 'sm:max-h-[300px]' : 'sm:min-h-[550px]'
+        }  flex flex-col relative justify-center items-center`}>
             <img src={heroBannerDetail.thumbnail} alt="bannerImage" className="absolute w-full h-full z-[-1]" />
             <div
                 className={`xl:w-[1180px] w-full ${

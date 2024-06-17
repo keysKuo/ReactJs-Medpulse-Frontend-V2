@@ -13,7 +13,12 @@ function Details(props) {
     return (
         <section className="w-full flex flex-col mt-[30px] justify-center items-center">
             <div className="xl:w-[1180px] w-full flex lg:gap-[32px] gap-[20px] flex-col items-center justify-center xl:px-0 px-4">
-                <h1 className="sm:text-[36px] text-[23px] sm:font-bold font-medium text-center">{detailTitle}</h1>
+                <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium text-center sm:block hidden">
+                    {detailTitle.desktop}
+                </h1>
+                <h1 className="sm:text-[36px] text-[23px] sm:font-bold font-medium text-center sm:hidden block">
+                    {detailTitle.mobile}
+                </h1>
                 <div className="flex lg:gap-[50px] gap-[24px] lg:flex-row flex-col items-center justify-center">
                     <div className="flex-1 w-full flex items-center justify-center">
                         <img src={detailSectionImage} alt="detailSectionImage" className="sm:w-full" />

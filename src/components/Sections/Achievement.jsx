@@ -2,7 +2,7 @@ import { FaStar } from 'react-icons/fa6';
 
 function Achievement(props) {
     return (
-        <section className="w-full flex flex-col justify-center items-center py-[20px] xl:px-0 px-[16px]">
+        <section className="w-full leading-normal flex flex-col justify-center items-center py-[20px] xl:px-0 px-[16px]">
             <div className="xl:w-[1180px] w-full flex lg:flex-row flex-col lg:gap-[20px] gap-[12px]">
                 <div className="flex-grow flex flex-col sm:gap-[12px] gap-[8px] p-[20px] items-center justify-center bg-button bg-opacity-20 rounded-[24px]">
                     <div className="flex flex-col sm:gap-[8px] gap-[4px] items-center justify-center">

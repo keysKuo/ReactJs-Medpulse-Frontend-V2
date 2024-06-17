@@ -23,7 +23,7 @@ function Services(props) {
                                 ưu-hiệu quả dựa trên việc phân tích thị trường và nghiên cứu nhu cầu khách hàng.
                             </p>
                         </div>
-                        <img src={serviceImage.serviceImage3} alt="serviceImage" className="w-[270px] h-[190px]" />
+                        <img src={serviceImage.serviceImage3} alt="serviceImage" className="w-[271px] h-[191px]" />
                     </div>
                     <div className="flex-shrink-1 p-[20px] bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg">
                         <div>
@@ -49,7 +49,7 @@ function Services(props) {
                                 hiệu quả bán hàng. Từ đó tăng cơ hội tiếp thị và thành công kinh doanh.
                             </p>
                         </div>
-                        <img src={serviceImage.serviceImage2} alt="serviceImage" className="w-[270px] h-[190px]" />
+                        <img src={serviceImage.serviceImage2} alt="serviceImage" className="w-[271px] h-[191px]" />
                     </div>
                 </div>
                 <hr className="h-px sm:mt-[36px] mt-[24px] sm:mb-[36px] mb-[16px] bg-black border-0 xl:w-[1180px] w-full" />

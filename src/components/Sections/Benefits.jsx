@@ -16,7 +16,7 @@ function Benefits(props) {
                 <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium text-center sm:block hidden">
                     {detailTitle.desktop}
                 </h1>
-                <h1 className="sm:text-[36px] text-[23px] w-full sm:font-bold font-medium text-center sm:hidden block">
+                <h1 className="sm:text-[36px] text-[24px] w-full sm:font-bold font-medium text-center sm:hidden block">
                     {detailTitle.mobile}
                 </h1>
                 <div className="w-full grid grid-cols-2 grid-rows-2 items-start justify-start md:gap-[30px] gap-[12px]">

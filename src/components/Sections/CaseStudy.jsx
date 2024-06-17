@@ -11,7 +11,7 @@ function CaseStudy(props) {
             <div className="xl:w-[1180px] w-full xl:px-0 px-4">
                 <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium xl:mb-[36px] mb-[24px] text-center">Case Study</h1>
                 <div className="xl:w-[1180px] w-full flex flex-row xl:justify-between justify-center items-start">
-                    <div className="w-[423px] xl:block hidden">
+                    <div className="w-[423px] xl:block hidden self-center">
                         <img
                             src={caseStudyImages[showDropDown === -1 ? 0 : showDropDown - 1]}
                             alt="registerSectionImage"

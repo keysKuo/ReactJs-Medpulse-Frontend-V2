@@ -1,4 +1,4 @@
-import { lineImage, processImage } from '../../assets/home';
+import { lineImage, lineImageMobile, processImage } from '../../assets/home';
 
 function ProjectProcess(props) {
     return (
@@ -17,7 +17,12 @@ function ProjectProcess(props) {
                 <img
                     src={lineImage}
                     alt="line"
-                    className="absolute xl:w-[60%] md:w-[740px] sm:w-[432px] w-[360px] xl:h-[50%] md:h-[30%] sm:h-[350px] h-[300px]  xl:right-0 xl:bottom-1/2 bottom-0 xl:translate-y-1/2 -translate-y-12 xl:translate-x-5"
+                    className="absolute md:block hidden xl:right-0 xl:bottom-1/2 bottom-0 xl:translate-y-1/2 -translate-y-12 xl:translate-x-5"
+                />
+                <img
+                    src={lineImageMobile}
+                    alt="line"
+                    className="absolute sm:h-[330px] h-[255px] sm:w-[450px] w-[375px] md:hidden block xl:right-0 xl:bottom-1/2 bottom-0 xl:translate-y-1/2 -translate-y-12 xl:translate-x-5"
                 />
                 <div className="grid md:grid-cols-3 grid-cols-2 md:gap-y-[75px] gap-y-[12px] md:gap-x-[30px] gap-x-[12px]  relative">
                     <div className="bg-light-violet sm:p-[16px] p-[12px] rounded-[20px] sm:w-[200px] w-[170px]">

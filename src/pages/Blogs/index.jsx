@@ -21,11 +21,11 @@ function Blogs(props) {
                 <div className="xl:w-[1180px] w-full grid lg:grid-rows-[min-content_1fr] lg:grid-cols-[270px_1fr] grid-cols-1 gap-[20px]">
                     <div className="flex flex-col gap-[16px]">
                         <div className="flex gap-[10px] p-[11px_20px] items-center w-full bg-light-gray bg-opacity-25 rounded-[12px]">
-                            <CiSearch className="text-[24px] text-gray min-w-[24px]" />
+                            <CiSearch className="text-[24px] text-[#727272] min-w-[24px]" />
                             <input
                                 type="text"
                                 placeholder="Tìm kiếm"
-                                className="text-[16px] bg-transparent bg-opacity-15 focus:outline-none font-medium p-[5px]"
+                                className="text-[16px] bg-transparent bg-opacity-15 placeholder-[#727272] focus:outline-none font-medium p-[5px]"
                             />
                         </div>
                         <div className="flex flex-col gap-[8px] font-medium sm:p-[12px_16px] sm:bg-light-gray sm:bg-opacity-25 sm:rounded-[12px] hideScrollbar sm:overscroll-none overflow-x-scroll">
