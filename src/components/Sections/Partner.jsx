@@ -115,7 +115,7 @@ function Partner(props) {
                         })}
                     </div>
                 </div>
-                <div className="text-center gap-[3px] flex">
+                <div className="text-center gap-[3px] sm:hidden flex">
                     {Array.from({ length: Math.round(partnerImages.length / 2) }).map((_, idx) => {
                         return (
                             <div
