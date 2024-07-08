@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 import Overlay from '../../components/Overlay';
 import RegisterForm from '../../components/RegisterForm';
@@ -12,9 +13,14 @@ function Services(props) {
     return (
         <>
             <section className="w-full flex flex-col xl:py-[27.5px] py-[42px] xl:px-0 px-4 justify-center items-center bg-light-violet">
-                <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium sm:mb-[32px] mb-[20px]">Dịch vụ cung cấp</h1>
+                <h1 className="sm:text-[36px] text-[24px] sm:font-bold font-medium sm:mb-[32px] mb-[20px]">
+                    Dịch vụ cung cấp
+                </h1>
                 <div className="xl:w-[1180px] w-full flex sm:flex-row flex-col gap-[24px]">
-                    <div className="p-[20px] h-min bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg">
+                    <Link
+                        to={'/dich-vu'}
+                        className="p-[20px] h-min bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg"
+                    >
                         <div className="w-full">
                             <h2 className="text-[20px] font-bold text-dark-violet">Giải pháp Marketing tổng thể</h2>
                             <hr className="h-px my-[12px] bg-dark-violet border-0 " />
@@ -24,8 +30,11 @@ function Services(props) {
                             </p>
                         </div>
                         <img src={serviceImage.serviceImage3} alt="serviceImage" className="w-[271px] h-[191px]" />
-                    </div>
-                    <div className="flex-shrink-1 p-[20px] bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg">
+                    </Link>
+                    <Link
+                        to={'/dich-vu'}
+                        className="flex-shrink-1 p-[20px] bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg"
+                    >
                         <div>
                             <h2 className="text-[20px] font-bold text-dark-violet">Giải pháp Thương hiệu</h2>
                             <hr className="h-px my-[12px] bg-dark-violet border-0 " />
@@ -39,8 +48,11 @@ function Services(props) {
                             alt="serviceImage"
                             className="sm:w-[270px] w-[223px] sm:h-[262px] h-[207px]"
                         />
-                    </div>
-                    <div className="p-[20px] h-min bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg">
+                    </Link>
+                    <Link
+                        to={'/dich-vu'}
+                        className="p-[20px] h-min bg-white flex flex-col gap-[32px] items-center rounded-[20px] shadow-lg"
+                    >
                         <div>
                             <h2 className="text-[20px] font-bold text-dark-violet">Giải pháp Tiếp thị và Bán hàng</h2>
                             <hr className="h-px my-[12px] bg-dark-violet border-0 " />
@@ -50,7 +62,7 @@ function Services(props) {
                             </p>
                         </div>
                         <img src={serviceImage.serviceImage2} alt="serviceImage" className="w-[271px] h-[191px]" />
-                    </div>
+                    </Link>
                 </div>
                 <hr className="h-px sm:mt-[36px] mt-[24px] sm:mb-[36px] mb-[16px] bg-black border-0 xl:w-[1180px] w-full" />
                 <div className="xl:w-[1180px] w-full flex justify-between items-center sm:gap-[5px] gap-[10px]">

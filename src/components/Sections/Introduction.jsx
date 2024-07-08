@@ -25,8 +25,8 @@ function Introduction(props) {
                         alt="registerSectionImage"
                         className={
                             location.pathname.includes('combo')
-                                ? 'sm:w-[525px] w-[343px] lg:h-[408px] h-[343px]'
-                                : 'sm:w-[439px] w-[343px] lg:h-[439px] h-[343px]'
+                                ? 'sm:w-[525px] w-[343px] lg:h-[408px] h-[310px]'
+                                : 'sm:w-[439px] w-[343px] lg:h-[439px] h-[310px]'
                         }
                     />
                 </div>
@@ -64,8 +64,8 @@ function Introduction(props) {
                                 <span className="sm:inline-block hidden">hiệu quả</span>
                             </li>
                             <li>
-                                Thương hiệu bạn <span className="sm:inline-block hidden">ấn tượng và</span> chuyên nghiệp cần chăm sóc và đẩy mạnh vị thế dẫn đầu về
-                                truyền thông - quảng cáo - sự kiện
+                                Thương hiệu bạn <span className="sm:inline-block hidden">ấn tượng và</span> chuyên
+                                nghiệp cần chăm sóc và đẩy mạnh vị thế dẫn đầu về truyền thông - quảng cáo - sự kiện
                             </li>
                             <li>Thương hiệu bạn cần tái định vị thương hiệu sau thời gian duy trì</li>
                         </ul>
