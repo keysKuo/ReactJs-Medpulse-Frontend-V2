@@ -1,19 +1,40 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 
+import { BlogAPIs } from '../../APIs';
 import HeroBanner from '../../components/Sections/HeroBanner';
-import NewsCard from '../../components/NewsCard';
 import Pagination from '../../components/Pagination';
+import { convertIsoDate } from '../../utils';
+import coverImage from '../../assets/favicons/android-chrome-144x144.png';
 
 import blogs from '../../constants/blogSection';
 
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+
 function Blogs(props) {
     const [selectedPage, setSelectedPage] = useState(1);
+    const [blogList, setBlogList] = useState([]);
 
     const handleOnPageSelect = (pageIndex) => {
         setSelectedPage(pageIndex);
     };
+
+    const loadBlogs = async () => {
+        try {
+            const result = await BlogAPIs.getBlogByPagination(selectedPage, 9);
+            if (result.length > 0) {
+                setBlogList([...result]);
+            }
+        } catch (error) {
+            throw error;
+        }
+    };
+
+    useEffect(() => {
+        loadBlogs();
+    }, [selectedPage]);
+
     return (
         <>
             <HeroBanner />
@@ -48,28 +69,33 @@ function Blogs(props) {
                     </div>
                     <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 flex flex-col gap-[20px] lg:items-start items-center">
                         <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row sm:gap-[20px] gap-0">
-                            {[...blogs, ...blogs, blogs[0]].map((blog, index) => {
+                            {blogList.map((blog, index) => {
                                 return (
                                     <div key={index}>
                                         <Link
-                                            to={'/blogs/blog'}
+                                            to={`/blogs/${blog?.attributes?.slug}`}
                                             className={`flex lg:flex-col flex-row sm:gap-0 gap-[12px] lg:max-w-[285px] max-w-full lg:min-h-full sm:border sm:border-light-gray rounded-[12px]`}
                                         >
                                             <div className="lg:w-full min-w-[35%] sm:h-[166px] h-[115px]">
                                                 <img
-                                                    src={blog.thumbnail}
-                                                    alt="blog"
+                                                    src={`${SERVER_URL}${blog?.attributes?.seo?.metaImage?.data?.attributes?.url}`}
+                                                    alt="blogThumnail"
                                                     className="lg:rounded-t-[12px] rounded-[8px] w-full h-full"
+                                                    onError={(e) => {
+                                                        e.target.src = coverImage;
+                                                    }}
                                                 />
                                             </div>
                                             <div className=" w-full flex flex-col items-start gap-[8px] sm:p-[16px] p-0">
-                                                <p className="font-normal text-gray sm:block hidden">{blog.date}</p>
+                                                <p className="font-normal text-gray sm:block hidden">
+                                                    {convertIsoDate(blog?.attributes?.publishedAt)}
+                                                </p>
                                                 <div>
                                                     <p className="line-clamp-2 font-medium sm:text-[18px] text-[16px]">
-                                                        {blog.title}
+                                                        {blog?.attributes?.title}
                                                     </p>
                                                     <p className="line-clamp-3 font-normal sm:text-[16px] text-[14px]">
-                                                        {blog.desc}
+                                                        {blog?.attributes?.seo?.metaDescription}
                                                     </p>
                                                 </div>
                                             </div>

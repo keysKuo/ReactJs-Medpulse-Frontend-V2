@@ -15,7 +15,6 @@ function Introduction(props) {
         setConstantsIntroduction(constantsIntroductionSection[location.pathname.split('/').pop()]);
     }, [location.pathname]);
 
-    console.log();
     return (
         <section className="w-full flex flex-col mt-[30px] justify-center items-center">
             <div className="xl:w-[1180px] w-full flex lg:gap-[50px] gap-[24px] lg:flex-row flex-col-reverse items-center justify-center xl:px-0 px-4">

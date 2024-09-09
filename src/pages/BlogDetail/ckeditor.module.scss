@@ -1,0 +1,78 @@
+.ckeditorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111827;
+    justify-content: center;
+    * {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 24px 0;
+        align-self: flex-start;
+    }
+
+    h2 {
+        font-size: 1.6666667em;
+        font-weight: 600;
+        line-height: 1.3333333;
+        // margin: 0.8666667em 0;
+        margin-top: 0.8666667em;
+        align-self: flex-start;
+    }
+
+    h3 {
+        align-self: flex-start;
+        font-size: 1.3333333em;
+        line-height: 1.5;
+        // margin-bottom: 0.6666667em;
+        margin-top: 1.6666667em;
+        font-weight: 600;
+    }
+
+    strong {
+        align-self: flex-start;
+        font-weight: 600;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
+    p {
+        margin: 0.5333333em 0;
+        width: 100%;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        align-self: flex-start;
+        list-style: circle;
+        padding-left: 1.5555556em;
+        // margin: 1.3333333em 0;
+        margin: 1em 0;
+    }
+
+    li {
+        padding-left: 0.4444444em;
+        margin: 0.6666667em 0;
+        font-size: 18px;
+        line-height: 1.7777778;
+    }
+
+    figure,
+    nav,
+    div,
+    h4 {
+        align-self: flex-start;
+    }
+}
